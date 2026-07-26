@@ -32,7 +32,7 @@ export default function ContactPage() {
                         <div className="grid gap-16 lg:grid-cols-2">
 
                             {/* INFORMATIONS */}
-                            <div>
+                            <div className="order-2 lg:order-1">
 
                                 <h2 className="text-4xl font-black text-[#45251d]">
                                     Venez nous rendre visite
@@ -89,7 +89,7 @@ export default function ContactPage() {
 
 
                             {/* FORMULAIRE */}
-                            <form className="space-y-5">
+                            <form className="order-1 space-y-5 lg:order-2">
 
                                 <input
                                     type="text"
