@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Hero() {
     return (
-        <section className="bg-[#F4F1EB] py-12 sm:py-16 lg:py-16">
+        <section className="bg-[#F6E9CE] py-12 lg:py-16">
             <div className="container-custom">
 
                 <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
@@ -11,11 +11,11 @@ export default function Hero() {
                     {/* TEXTE */}
                     <div>
 
-                        <p className="mb-5 text-sm font-semibold uppercase tracking-[0.25em] text-[#698980]">
+                        <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#c98a6b]">
                             HARU COFFEE
                         </p>
 
-                        <h1 className="max-w-3xl text-5xl font-black leading-[0.95] tracking-tight text-[#45251d] sm:text-7xl lg:text-8xl">
+                        <h1 className="mt-4 max-w-3xl text-5xl font-black leading-[0.95] tracking-tight text-[#45251d] sm:text-6xl lg:text-8xl">
                             Un havre
                             <br />
                             <span className="font-normal italic">
@@ -23,18 +23,18 @@ export default function Hero() {
                             </span>
                         </h1>
 
-                        <p className="mt-8 max-w-xl text-base leading-7 text-[#45251d]/75 sm:text-lg sm:leading-8">
+                        <p className="mt-6 max-w-xl text-base leading-7 text-[#45251d]/75 sm:text-lg sm:leading-8">
                             HARU COFFEE, un lieu paisible où déguster un café de
                             spécialité préparé avec amour et soin. Reconnectez-vous
                             avec vos sens.
                         </p>
 
-                        {/* BOUTON DESKTOP UNIQUEMENT */}
-                        <div className="mt-10 hidden lg:block">
+                        {/* BOUTON DESKTOP */}
+                        <div className="mt-8 hidden lg:block">
 
                             <Link
                                 href="/carte"
-                                className="inline-flex rounded-full bg-[#698980] px-7 py-4 font-semibold text-white transition hover:bg-[#45251d]"
+                                className="inline-flex rounded-full bg-[#45251d] px-7 py-4 font-semibold text-[#F6E9CE] transition hover:bg-[#c98a6b]"
                             >
                                 Explorez notre menu
                             </Link>
@@ -59,12 +59,12 @@ export default function Hero() {
                     </div>
 
 
-                    {/* BOUTON MOBILE UNIQUEMENT */}
+                    {/* BOUTON MOBILE */}
                     <div className="lg:hidden">
 
                         <Link
                             href="/carte"
-                            className="inline-flex rounded-full bg-[#698980] px-7 py-4 font-semibold text-white transition hover:bg-[#45251d]"
+                            className="inline-flex rounded-full bg-[#45251d] px-7 py-4 font-semibold text-[#F6E9CE] transition hover:bg-[#c98a6b]"
                         >
                             Explorez notre menu
                         </Link>
