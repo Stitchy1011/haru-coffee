@@ -35,7 +35,7 @@ export default function NewsPage() {
                             {/* ULULE */}
                             <article className="overflow-hidden rounded-[2rem] bg-[#F6E9CE]">
 
-                                <div className="relative pt-8">
+                                <div className="relative pt-0 sm:pt-8">
 
                                     <div className="relative overflow-hidden rounded-[2rem]">
 
@@ -44,8 +44,18 @@ export default function NewsPage() {
                                             alt="HARU Coffee Shop"
                                             width={1000}
                                             height={1200}
-                                            className="mx-auto h-auto max-h-[500px] w-auto max-w-full rounded-[2rem] object-contain"
                                             priority
+                                            className="
+                                                mx-auto
+                                                h-auto
+                                                w-full
+                                                max-w-full
+                                                rounded-[2rem]
+                                                object-contain
+                                                sm:w-auto
+                                                sm:max-w-full
+                                                sm:max-h-[500px]
+                                            "
                                         />
 
                                     </div>

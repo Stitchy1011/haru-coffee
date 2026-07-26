@@ -164,14 +164,14 @@ export default function MenuPage() {
                                 <div key={category.title}>
 
                                     {/* TITRE DE LA CATÉGORIE */}
-                                    <div className="flex items-baseline gap-4 border-b-2 border-[#45251d] pb-3">
+                                    <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1 border-b-2 border-[#45251d] pb-3">
 
                                         <h2 className="text-3xl font-black text-[#45251d] sm:text-4xl">
                                             {category.title.toUpperCase()}
                                         </h2>
 
                                         {category.subtitle && (
-                                            <span className="text-lg font-semibold text-[#c98a6b]">
+                                            <span className="text-base font-semibold text-[#c98a6b] sm:text-lg">
                                                 {category.subtitle}
                                             </span>
                                         )}
@@ -188,21 +188,21 @@ export default function MenuPage() {
                                                 className="flex items-start justify-between gap-4"
                                             >
 
-                                                <div>
+                                                <div className="min-w-0">
 
                                                     <h3 className="text-xl font-serif text-[#45251d]">
                                                         {item.name}
                                                     </h3>
 
                                                     {item.description && (
-                                                        <p className="mt-1 text-sm text-[#45251d]/70">
+                                                        <p className="mt-1 text-sm leading-5 text-[#45251d]/70">
                                                             {item.description}
                                                         </p>
                                                     )}
 
                                                 </div>
 
-                                                <span className="whitespace-nowrap text-xl font-serif text-[#45251d]">
+                                                <span className="shrink-0 whitespace-nowrap text-xl font-serif text-[#45251d]">
                                                     {item.price}
                                                 </span>
 
@@ -225,14 +225,14 @@ export default function MenuPage() {
                                                 {supplements.map((supplement) => (
                                                     <li
                                                         key={supplement.name}
-                                                        className="flex justify-between gap-4"
+                                                        className="flex items-start justify-between gap-4"
                                                     >
 
-                                                        <span>
+                                                        <span className="min-w-0">
                                                             {supplement.name}
                                                         </span>
 
-                                                        <span className="whitespace-nowrap font-semibold text-[#c98a6b]">
+                                                        <span className="shrink-0 whitespace-nowrap font-semibold text-[#c98a6b]">
                                                             {supplement.price}
                                                         </span>
 
@@ -254,7 +254,7 @@ export default function MenuPage() {
 
 
                 {/* CTA */}
-                <section className="bg-[#45251d] py-16 text-[#F6E9CE] lg:py-20">
+                {/* <section className="bg-[#45251d] py-16 text-[#F6E9CE] lg:py-20">
                     <div className="container-custom">
 
                         <div className="flex flex-col justify-between gap-8 md:flex-row md:items-center">
@@ -281,7 +281,7 @@ export default function MenuPage() {
                         </div>
 
                     </div>
-                </section>
+                </section> */}
 
             </main>
 
